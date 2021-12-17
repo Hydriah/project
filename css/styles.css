@@ -80,6 +80,7 @@ h5 {
 	color: #24262a;
 	font-weight: 700;
 	font-size: 1.25rem;
+
 	line-height: 1.625rem;
 	font-family: "Poppins"
 }
@@ -374,10 +375,12 @@ input[type='checkbox'] {
 .navbar {
 	background-color: #24262a;
 	font-weight: 600;
+	
 	font-size: 0.875rem;
 	line-height: 0.875rem;
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 }
+
 
 .navbar .navbar-brand {
 	padding-top: 0.125rem;
@@ -397,6 +400,9 @@ input[type='checkbox'] {
 	text-decoration: none;
 }
 
+.nav-h5{
+color: rgb(129, 120, 129);
+}
 .offcanvas-collapse {
 	position: fixed;
 	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
@@ -422,6 +428,12 @@ input[type='checkbox'] {
 .navbar .navbar-nav {
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
+}
+ 
+.cont{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
 
 .navbar .nav-item .nav-link {
@@ -519,18 +531,57 @@ input[type='checkbox'] {
 /*     Header     */
 /******************/
 .header {
+	display: flex;
+	flex-direction: column;
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
 	background-size: cover;
+    background-image: url(../images/pageimages2.jfif) ; 
 	text-align: center;
 }
 
-.header .h1-large {
-	margin-bottom: 1.75rem;
-	color: #ffffff;
+
+.img-container{
+width: 230px;
+height: 230px;
+margin-left: 7rem;
+border-radius: 50%;
+background-image: url(../images/portimg5.jpg); 
+}
+ 
+/* .text-container{
+	padding: 25%;
+} */
+
+.hashH{
+	color: rgb(100, 36, 36);
+	text-align: center;
+}
+.hashH:hover{
+	color: rgb(152, 207, 205);
 }
 
+
+.header .h6-large {
+	margin-bottom: 5rem;
+	color: #ffffff;
+	padding:10% ;
+	font-style: oblique;
+}
+
+.header .h6-large:hover{
+	padding: 15%;
+	color: rgb(247, 241, 241);
+	font-stretch: ultra-condensed;
+	font-style: italic;
+	
+	
+}
+.socials{
+	float: left;
+	display: flex;
+	flex-direction: column;
+}
 .header .btn-solid-lg:hover {
 	border: 1px solid #ffffff;
 	color: #ffffff;
@@ -562,12 +613,12 @@ input[type='checkbox'] {
 }
 
 .basic-1 .text-container {
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 }
 
 .basic-1 .time {
 	margin-bottom: 0.5rem;
-	color: #0b36a8;
+	color: #0b90a8;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 1.5rem;
@@ -606,7 +657,7 @@ input[type='checkbox'] {
 .basic-2 .fas,
 .basic-2 .far {
 	margin-bottom: 1.75rem;
-	color: #0b36a8;
+	color: #0b90a8;
 	font-size: 3.5rem;
 }
 
@@ -864,6 +915,12 @@ input[type='checkbox'] {
 	text-decoration: none;
 }
 
+.social-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+}
 .footer .fa-stack {
 	width: 2em;
 	margin-bottom: 1.25rem;
@@ -994,6 +1051,8 @@ a:hover.back-to-top {
 /*************************/	
 /* Min-width 768px */
 @media (min-width: 768px) {
+	
+
 
 	/* Header */
 	.header {
@@ -1041,13 +1100,12 @@ a:hover.back-to-top {
 	/* Navigation */
 	.navbar {
 		padding-top: 1.75rem;
-		background-color: transparent;
+		background-color: initial;
 		box-shadow: none;
 		transition: all 0.2s;
 	}
 
 	.navbar.top-nav-collapse {
-		padding-top: 0.5rem;
 		padding-top: 0.5rem;
 		background-color: #24262a;
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
@@ -1091,7 +1149,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar .social-icons {
-		margin-left: 0.5rem;
+		visibility: hidden;
 	}
 	
 	.navbar .fa-stack {
@@ -1105,9 +1163,13 @@ a:hover.back-to-top {
 	.header {
 		padding-top: 15rem;
 		padding-bottom: 14rem;
-		text-align: left;
+		text-align: center;
 	}
-	/* end of header */
+	
+	.img-container{
+		margin-left: 12rem;
+	} 
+	/* end of header
 
 
 	/* Details */
@@ -1215,6 +1277,7 @@ a:hover.back-to-top {
 	.navbar .container {
 		max-width: 1330px;
 	}
+			}
 	/* end of navigation */
 
 
@@ -1223,6 +1286,9 @@ a:hover.back-to-top {
 		padding-top: 18.25rem;
 		padding-bottom: 17.25rem;
 	}
+	
+	
+	 
 	/* end of header */
 
 
@@ -1276,5 +1342,5 @@ a:hover.back-to-top {
 		margin-left: 2.875rem;
 	}
 	/* end of extra pages */
-}
+
 /* end of min-width 1200px */
