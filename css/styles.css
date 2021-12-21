@@ -559,8 +559,6 @@ border-radius: 50%;
 background-image: url(../images/portimg5.jpg); 
 }
  
-
-
 .header .h6-large {
 	margin-bottom: 5rem;
 	color: #ffffff;
@@ -606,6 +604,9 @@ background-image: url(../images/portimg5.jpg);
 /*****************/
 /*     About     */
 /*****************/
+#about{
+	background-color: rgb(250, 225, 225);
+}
 .basic-1 {
 	padding-top: 7.75rem;
 	padding-bottom: 5.25rem;
@@ -971,7 +972,7 @@ background-image: url(../images/portimg5.jpg);
 /******************************/
 /*     Back To Top Button     */
 /******************************/
-a.back-to-top {
+/* a.back-to-top {
 	position: fixed;
 	z-index: 999;
 	right: 12px;
@@ -987,7 +988,7 @@ a.back-to-top {
 
 a:hover.back-to-top {
 	background-color: #0b36a8;
-}
+} */
 
 
 /***********************/
