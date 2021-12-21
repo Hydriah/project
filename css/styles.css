@@ -37,15 +37,17 @@ body,
 html {
     width: 100%;
 	height: 100%;
+	background-color: rgb(248, 242, 245);
 }
 
 body, p {
 	color: #4d5055; 
-	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+	font: 450 1rem/1.625rem "Open Sans", sans-serif;
+
 }
 
 h1 {
-	color: #24262a;
+	color: #6262ac;
 	font-weight: 700;
 	font-size: 2.5rem;
 	line-height: 3.25rem;
@@ -77,7 +79,7 @@ h4 {
 }
 
 h5 {
-	color: #24262a;
+	color: #fbfcfd;
 	font-weight: 700;
 	font-size: 1.25rem;
 
@@ -123,7 +125,7 @@ a {
 }
 
 a:hover {
-	color: #4d5055;
+	color: hsl(217, 5%, 32%);
 	text-decoration: underline;
 }
 
@@ -173,9 +175,9 @@ a:hover {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #0b36a8;
-	background-color: #0b36a8;
-	color: #ffffff;
+	/* border: 1px o #0b36a8; */
+	background-color: #7d8086;
+	color: #f5c9ee;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -346,15 +348,19 @@ input[type='checkbox'] {
 	vertical-align: -10%;
 	margin-right: 0.5rem;
 }
-
+.returnbutton{
+	border:none;
+	color: #ffff;
+	background-color: rgb(135, 135, 167);
+}
 .form-control-submit-button {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #0b36a8;
+	border: 1px solid #adafb4;
 	border-radius: 32px;
-	background-color: #0b36a8;
-	color: #ffffff;
+	background-color: #858585;
+	color: #fadef4;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -386,7 +392,7 @@ input[type='checkbox'] {
 	padding-top: 0.125rem;
 	padding-bottom: 0.125rem;
 }
-
+/* 
 .navbar .logo-image img {
     width: 118px;
 	height: 36px;
@@ -398,14 +404,14 @@ input[type='checkbox'] {
 	font-size: 1.875rem;
 	line-height: 1rem;
 	text-decoration: none;
-}
+} */
 
 .nav-h5{
 color: rgb(129, 120, 129);
 }
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 3.50rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -445,11 +451,14 @@ color: rgb(129, 120, 129);
 }
 
 .navbar .nav-item.dropdown.show .nav-link,
-.navbar .nav-item .nav-link:hover,
+
 .navbar .nav-item .nav-link.active {
 	color: #9c9ead;
 }
-
+.navbar .nav-item .nav-link:hover{
+	
+	color: rgb(253, 230, 248);
+}
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
 	animation: fadeDropdown 0.2s; /* required for the fade animation */
@@ -536,30 +545,20 @@ color: rgb(129, 120, 129);
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
 	background-size: cover;
-    background-image: url(../images/pageimages2.jfif) ; 
+	background-color: rgb(252, 225, 240);
+    /* background-image: url(../images/project-details-small.jpg) ;  */
 	text-align: center;
 }
 
 
 .img-container{
-width: 230px;
-height: 230px;
+width: 240px;
+height: 240px;
 margin-left: 7rem;
 border-radius: 50%;
 background-image: url(../images/portimg5.jpg); 
 }
  
-/* .text-container{
-	padding: 25%;
-} */
-
-.hashH{
-	color: rgb(100, 36, 36);
-	text-align: center;
-}
-.hashH:hover{
-	color: rgb(152, 207, 205);
-}
 
 
 .header .h6-large {
@@ -885,7 +884,9 @@ background-image: url(../images/portimg5.jpg);
 /*******************/
 /*     Contact     */
 /*******************/
+
 .form-1 {
+	background-color: rgb(250, 235, 243);
 	padding-top: 7.75rem;
 	padding-bottom: 7rem;
 	text-align: center;
@@ -1100,7 +1101,7 @@ a:hover.back-to-top {
 	/* Navigation */
 	.navbar {
 		padding-top: 1.75rem;
-		background-color: initial;
+		background-color: rgb(88, 84, 84);
 		box-shadow: none;
 		transition: all 0.2s;
 	}
@@ -1277,7 +1278,7 @@ a:hover.back-to-top {
 	.navbar .container {
 		max-width: 1330px;
 	}
-			}
+			
 	/* end of navigation */
 
 
