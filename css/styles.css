@@ -634,8 +634,8 @@ background-image: url(../images/portimg5.jpg);
 	margin-bottom: 0.125rem;
 }
  .main{
-	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/IMG-0555.jpg') center center no-repeat;
+	height: 490px;
+	background: url('../images/101.jfif') no-repeat ;
 	
 	/* background: url(../images/101.jfif)  ; */
 
