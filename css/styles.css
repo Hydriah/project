@@ -312,6 +312,7 @@ select {
     outline: none;
 }
 
+
 .form-control-textarea {
 	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
 	width: 100%;
@@ -457,7 +458,7 @@ color: rgb(129, 120, 129);
 }
 .navbar .nav-item .nav-link:hover{
 	
-	color: rgb(253, 230, 248);
+	color: rgb(175, 170, 174);
 }
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
@@ -546,8 +547,7 @@ color: rgb(129, 120, 129);
 	padding-bottom: 5.5rem;
 	background-size: cover;
 	background-color: rgb(252, 225, 240);
-    /* background-image: url(../images/project-details-small.jpg) ;  */
-	text-align: center;
+    text-align: center;
 }
 
 
@@ -555,6 +555,7 @@ color: rgb(129, 120, 129);
 width: 240px;
 height: 240px;
 margin-left: 7rem;
+border: hidden;
 border-radius: 50%;
 background-image: url(../images/portimg5.jpg); 
 }
@@ -605,15 +606,19 @@ background-image: url(../images/portimg5.jpg);
 /*     About     */
 /*****************/
 #about{
-	background-color: rgb(250, 225, 225);
+	
+	background-color:rgb(252, 242, 242);
 }
+
 .basic-1 {
 	padding-top: 7.75rem;
 	padding-bottom: 5.25rem;
+
 }
 
 .basic-1 .text-container {
 	margin-bottom: 5rem;
+	/* display: flex; */
 }
 
 .basic-1 .time {
@@ -628,8 +633,17 @@ background-image: url(../images/portimg5.jpg);
 .basic-1 h6 {
 	margin-bottom: 0.125rem;
 }
+ .main{
+	height: 430px;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/IMG-0555.jpg') center center no-repeat;
+	
+	/* background: url(../images/101.jfif)  ; */
 
-
+ }
+ .basic-1.text-containersecond{
+	 display: flex;
+	 flex-direction: row;
+ }
 /********************/
 /*     Services     */
 /********************/
@@ -671,7 +685,7 @@ background-image: url(../images/portimg5.jpg);
 /*******************/
 .split .area-1 {
 	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/IMG-0555.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -887,7 +901,7 @@ background-image: url(../images/portimg5.jpg);
 /*******************/
 
 .form-1 {
-	background-color: rgb(250, 235, 243);
+	background-color: rgb(253, 246, 250);
 	padding-top: 7.75rem;
 	padding-bottom: 7rem;
 	text-align: center;
@@ -1051,6 +1065,7 @@ a:hover.back-to-top {
 /*************************/
 /*     Media Queries     */
 /*************************/	
+
 /* Min-width 768px */
 @media (min-width: 768px) {
 	
@@ -1173,8 +1188,18 @@ a:hover.back-to-top {
 	} 
 	/* end of header
 
+ /* about */
+	
+.footer{
+	width: 100%;
 
-	/* Details */
+}
+.copyright{
+	width: 100%;
+
+}
+
+ /* Details */
 	.split {
 		height: 760px;
 	}
@@ -1236,6 +1261,9 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
+
+
 	/* end of accordion */
 
 
@@ -1287,15 +1315,11 @@ a:hover.back-to-top {
 	.header {
 		padding-top: 18.25rem;
 		padding-bottom: 17.25rem;
-	}
-	
-	
-	 
-	/* end of header */
+	}/* end of header */
 
 
 	/* About */
-	.basic-1 .text-container.first {
+	/* .basic-1 .text-container.first {
 		margin-right: 2rem;
 	}
 
@@ -1306,7 +1330,12 @@ a:hover.back-to-top {
 
 	.basic-1 .text-container.third {
 		margin-left: 2rem;
-	}
+
+	} */
+.footer{
+	margin-right: 10rem;
+}
+
 	/* end of about */
 
 
