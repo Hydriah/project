@@ -37,17 +37,18 @@ body,
 html {
     width: 100%;
 	height: 100%;
-	background-color: rgb(248, 242, 245);
+	background-color: rgb(253, 241, 249);
 }
 
 body, p {
-	color: #4d5055; 
+	color: 
+	#030303; 
 	font: 450 1rem/1.625rem "Open Sans", sans-serif;
 
 }
 
 h1 {
-	color: #6262ac;
+	color: #515196;
 	font-weight: 700;
 	font-size: 2.5rem;
 	line-height: 3.25rem;
@@ -168,7 +169,7 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #0b36a8; /* needs to stay here because of the color property of a tag */
+	color: #37383a; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -177,7 +178,7 @@ a:hover {
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
 	/* border: 1px o #0b36a8; */
 	background-color: #7d8086;
-	color: #f5c9ee;
+	color: white;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -195,7 +196,7 @@ a:hover {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
 	border: 1px solid #24262a;
-	background-color: transparent;
+	background-color: blue;
 	color: #24262a;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -349,10 +350,13 @@ input[type='checkbox'] {
 	vertical-align: -10%;
 	margin-right: 0.5rem;
 }
-.returnbutton{
+/* .returnbutton{
 	border:none;
-	color: #ffff;
+	
 	background-color: rgb(135, 135, 167);
+} */
+.returnbutton:hover{
+background-color:ivory;
 }
 .form-control-submit-button {
 	display: inline-block;
@@ -361,7 +365,7 @@ input[type='checkbox'] {
 	border: 1px solid #adafb4;
 	border-radius: 32px;
 	background-color: #858585;
-	color: #fadef4;
+	color: #fcf9fb;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -546,7 +550,7 @@ color: rgb(129, 120, 129);
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
 	background-size: cover;
-	background-color: rgb(252, 225, 240);
+	background-color: rgb(253, 241, 249);
     text-align: center;
 }
 
@@ -560,9 +564,9 @@ border-radius: 50%;
 background-image: url(../images/portimg5.jpg); 
 }
  
-.header .h6-large {
+/* .header .h6-large {
 	margin-bottom: 5rem;
-	color: #ffffff;
+	color: #cc1111;
 	padding:10% ;
 	font-style: oblique;
 }
@@ -571,29 +575,31 @@ background-image: url(../images/portimg5.jpg);
 	padding: 15%;
 	color: rgb(247, 241, 241);
 	font-stretch: ultra-condensed;
-	font-style: italic;
+	font-style: italic; 
 	
-	
-}
+}*/
+
 .socials{
-	float: left;
+	
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 .header .btn-solid-lg:hover {
-	border: 1px solid #ffffff;
-	color: #ffffff;
+	border: 2px solid #0a0a0a;
+	
 }
 
 .header .btn-outline-lg {
 	padding: 1.625rem 1.625rem 1.625rem 1.625rem;
 	border: none;
-	color: #ffffff;
+	color: #111111;
 }
 
 .header .btn-outline-lg:hover {
-	background: transparent;
-	color: #9c9ead;
+	background: rgb(242, 243, 247);
+	
+	
 	text-decoration: none;
 }
 
@@ -1065,6 +1071,16 @@ a:hover.back-to-top {
 /*************************/
 /*     Media Queries     */
 /*************************/	
+@media (max-width: 768px){
+
+
+	/* header */
+	.img-container{
+		margin-left: 4rem;
+	}
+}
+
+
 
 /* Min-width 768px */
 @media (min-width: 768px) {
@@ -1156,6 +1172,10 @@ a:hover.back-to-top {
 		padding-left: 0.625rem;
 	}
 
+	
+	
+	
+	
 	.navbar .dropdown-menu {
 		margin-top: 0.25rem;
 		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.08);
@@ -1184,8 +1204,11 @@ a:hover.back-to-top {
 	}
 	
 	.img-container{
-		margin-left: 12rem;
+		margin-left: 25rem;
+		margin-bottom:0.25rem;
+		margin-top:0.25rem;
 	} 
+	 
 	/* end of header
 
  /* about */
@@ -1374,4 +1397,4 @@ a:hover.back-to-top {
 	}
 	/* end of extra pages */
 
-/* end of min-width 1200px */
+}/* end of min-width 1200px */
